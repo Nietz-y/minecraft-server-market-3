@@ -1,0 +1,87 @@
+.cabecalho {
+    margin: 10px 150px 0px 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    margin: 10px 150px 0px 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #43718e;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-family:sans-serif;
+}
+
+#entrar {
+    display: none;
+}
+
+.login {
+    text-decoration: none;
+    background-color: rgb(158, 158, 158);
+    font-family: 'montserrat' , sans-serif;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: 300ms ease;
+}
+
+
+.register {
+    text-decoration: none;
+    background-color: rgb(158, 158, 158);
+    background-color: #43718e;
+    font-family: 'montserrat' , sans-serif;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    color: white;
+    transition: 300ms ease;
+}
+
+.login:hover {
+    background-color:  rgb(84, 84, 84);
+}
+.register:hover {
+    background-color: rgb(34, 70, 93);
+}
+
+.register:active , .login:active {
+    background-color: #009dff83;
+}
+
+.cadastro {
+    display: flex;
+    gap: 12px;
+}
+
+#botao-menu {
+    display: none;
+}
+
+
+ /* media */
+.nav-links {
+    display: none;
+}
+.login-register {
+    display: none;
+}
+.mobile-menu-button {
+    display: block;
+}

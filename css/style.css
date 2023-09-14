@@ -1,0 +1,504 @@
+/* GERAL-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.destaque {
+    color: red;
+}
+
+/* CABECALHO-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 180px;
+}
+
+/* Estilos para a logo */
+.logo a {
+    text-decoration: none;
+    color: #43718e;
+    font-size: 2em;
+    font-family: 'minecraft', sans-serif;;
+}
+
+/* Estilos para os links de navegação */
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+/* Estilos para os links de login e registro */
+.login-register a {
+    text-decoration: none;
+    background-color: rgb(158, 158, 158);
+    font-family: 'montserrat' , sans-serif;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: 300ms ease;
+}
+
+#login {
+    text-decoration: none;
+    background-color: rgb(158, 158, 158);
+    font-family: 'montserrat' , sans-serif;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: 300ms ease;
+}
+
+#register {
+    text-decoration: none;
+    background-color: rgb(158, 158, 158);
+    background-color: #43718e;
+    font-family: 'montserrat' , sans-serif;
+    padding: 0.5em 1.5em;
+    border-radius: 20px;
+    color: white;
+    transition: 300ms ease;
+}
+
+#login:hover {
+    background-color:  rgb(84, 84, 84);
+}
+#register:hover {
+    background-color: rgb(34, 70, 93);
+}
+#register:active , .login:active {
+    background-color: #009dff83;
+}
+
+/* Estilos para o botão do menu móvel */
+.mobile-menu-button {
+    display: none;
+    border: none;
+    background: white;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para o menu móvel */
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #43718e;
+    z-index: 1000;
+    opacity: 0.988;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    font-family: '5montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #ffffff;
+    border-bottom: solid 1px white;
+    width: 90vw;
+}
+
+/* Estilos para ocultar o menu móvel inicialmente */
+.hidden {
+    display: none;
+    width: 0%;
+}
+
+.menu__icon {
+    width: 20px;
+}
+
+/* BOLHA-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.bolha {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    right: 0.8em;
+    bottom: 0.02em;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    padding: 1em 2em;
+    background-color: #43718e;
+    color: white;
+    border-top-right-radius:  5px;
+    border-top-left-radius: 25px;
+    height: 1.2em;
+    transition: height 500ms ease-out;
+    gap: 20px;
+}
+
+.bolha:hover {
+    height: 10em;
+    transition: 500ms;
+}
+
+.bolha__texto {
+    font-size: 0.9rem;
+}
+
+.bolha__form {
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+/* SECTION-1-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.section {
+    margin: 10% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;   
+}
+
+.titulo__server {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    box-shadow: 1px 5px 15px 8px rgba(0, 0, 0, 0.276);
+    color: #43718e;
+    padding: 33px 40px 0px 40px;
+    cursor: not-allowed;
+    border-radius: 100px;
+    }
+
+.template {
+    height: 300px;
+    width: 1000px; 
+    border-radius: 100px;
+    margin-bottom: 10%;
+}
+
+.textos {
+    column-gap: 100px;
+}
+
+.titulo {
+    color: black;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.texto {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.titulo__2 {
+    color: black;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* SECTION-2-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+.section__2 {
+    margin: 10% 6%;
+    display: flex;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    padding: 1%;
+    border: solid 5px rgb(207, 207, 207);
+    border-radius: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 13px;
+}
+
+.box__img {
+    border-bottom: solid 0px rgb(207, 207, 207);
+    padding: 10px 110px;
+    transition: ease 500ms;
+}
+
+.box__img:hover {
+    transform: scale(1.20);
+    border-bottom: 0;
+}
+
+.box__nome {
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.box__texto {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box__preco {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(168, 35, 35);
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botao {
+    background-color: rgb(158, 158, 158);
+    color: whitesmoke;
+    padding: 0.4em 40%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 100px;
+    transition: ease 350ms;
+}
+
+.botao:hover {
+    background-color:  rgb(84, 84, 84);
+    cursor: pointer;
+}
+
+.nitos:active {
+    background-color: rgba(255, 0, 0, 0.54);
+    cursor: not-allowed;
+}
+
+.cash:active {
+    background-color: #009dff83;
+}
+
+/* RODAPE-000000000000000000000000000000000000000000000000000000000000000 */
+
+.rodape {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(232, 232, 232);
+}
+
+.rodape__links {
+    padding-top: 16px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 1%;
+}
+
+.rodape__link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+.rodape__texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.rodape__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* MEDIAQUERY-0000000000000000000000000000000000000000000000000000000000000000000000 */
+
+@media (max-width: 1300px) {
+    .template {
+        width: 1000px;
+    }
+
+    .box {
+        width: 40%;
+    }
+
+    .botao {
+        font-size: 1.4rem;
+        padding: 0.4em 2.6em;
+    }
+
+    .titulo__server {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 1000px) {
+
+    header {
+        padding: 12px 20px;
+    }
+
+    .template {
+        width: 800px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .botao {
+        padding: 0.4em 2em
+    }
+
+    .titulo__server {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 865px) {
+    .template {
+        width: 600px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .botao {
+        font-size: 1.3rem;
+        padding: 0.4em 4.5em
+    }
+
+    .titulo__server {
+        font-size: 5rem;
+    }
+
+    .rodape__links {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+}
+@media (max-width: 645px) {
+
+    .nav-links {
+        display: none;
+    }
+    .login-register {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .template {
+        width: 400px;
+    }
+
+    .botao {
+        font-size: 1.3rem;
+        padding: 0.4em 3em;
+    }
+
+    .titulo__server {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 475px) {
+    .section {
+        margin-bottom: 0 0;
+        gap: 40px;
+    }
+
+    .template {
+        width: 300px;
+        height: 140px;
+    }
+
+    .titulo__server {
+        font-size: 3.5rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .texto {
+        font-size: 1.7rem;
+    }
+
+    .titulo__2 {
+        font-size: 2rem;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .botao {
+        font-size: 1.3rem;
+        padding: 0.5em 5em;
+    }
+
+    .botoes {
+        flex-direction: column;
+        margin-bottom: 4%;
+    }
+
+    .bolha {
+        left: 45px;
+        right: 45px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+
+    .box__img {
+        width: 50%;
+        padding: 10px 50px;
+    }
+}
